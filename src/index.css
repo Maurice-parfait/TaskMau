@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PERSONNALISATION DE DOUTONS DE FULLCALENDAR  */
+  
+  /* Personnalisation du bouton 'Jour' */
+.fc-timeGridDay-button.fc-button.fc-button-primary {
+    @apply bg-orange-200/30 text-orange-400 border-none hover:border-none;
+}
+
+.fc-timeGridDay-button.fc-button.fc-button-primary.fc-button-active {
+    @apply bg-orange-400 text-white border-none hover:border-none;
+}
+
+/* pour le bouton semaine */
+.fc-timeGridWeek-button.fc-button.fc-button-primary{
+    @apply bg-orange-200/30 text-orange-400 border-none hover:border-none focus:outline-none 
+    active:border-0 active:border-none focus:ring-0 active:bg-orange-400 focus:shadow-none focus:border-transparent  focus:border-none;
+}
+
+.fc-timeGridWeek-button.fc-button.fc-button-primary.fc-button-active{
+    @apply bg-orange-400 shadow-none active:border-0 active:p-0
+}
+
+/* pour le bouton mois */
+.fc-dayGridMonth-button.fc-button.fc-button-primary {
+    @apply bg-orange-200/30 text-orange-400  border-none outline-none ring focus:outline-none active:border-none
+}
+
+.fc-dayGridMonth-button.fc-button.fc-button-primary.fc-button-active {
+    @apply bg-orange-400 text-white border-transparent shadow-none outline-none  focus:ring-0 focus:outline-none
+     active:bg-orange-200/30 ;
+}
+
+/* le bouton aujourd'hui  */
+
+.fc-today-button.fc-button.fc-button-primary{
+    @apply bg-orange-500 border-none active:bg-orange-400
+}
+
+/* le bouuton de prev */
+.fc-icon.fc-icon-chevron-left{
+    @apply bg-orange-400
+}
+
+.fc-prev-button.fc-button.fc-button-primary{
+    @apply bg-orange-400 border-none before:shadow-none active:bg-orange-400
+}
+
+.fc-button-group{
+    @apply gap-1
+}
+
+
+/* le bouton de suiv */
+
+.fc-icon.fc-icon-chevron-right{
+    @apply bg-orange-400
+}
+.fc-next-button.fc-button.fc-button-primary{
+    @apply bg-orange-400 border-none before:shadow-none active:bg-orange-400
+}
+
+  
